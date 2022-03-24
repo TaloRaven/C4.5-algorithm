@@ -13,7 +13,6 @@ class Information(TableOperations):
                 atribut.append(j)
             atributes.append(atribut)
 
-        # print(atributes)
         mini_tables_age=[]
         for i, x in enumerate(atributes):
             for j in x:

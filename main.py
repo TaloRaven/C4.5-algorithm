@@ -10,6 +10,8 @@ def main():
     t1=Table(FILE_NAME).txt_to_tables()
     gratio=GainRatio()
     gratio.table=t1
+    print(gratio)
+    print('Gain Ratios')
     print(gratio.gainratio())
 
 if __name__ == "__main__":

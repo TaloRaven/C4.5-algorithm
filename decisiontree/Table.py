@@ -1,6 +1,6 @@
 class Table():
-    def __init__(self,txt_name):
-        self.txt_name=txt_name
+    def __init__(self,txt_file_name):
+        self.txt_name=txt_file_name
 
     def txt_to_tables(self):
         table = []

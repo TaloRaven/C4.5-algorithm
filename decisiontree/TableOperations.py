@@ -1,6 +1,5 @@
 class TableOperations():
     def __init__(self) -> None:
-        self._table=0
         pass
     
     @property
