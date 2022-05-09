@@ -1,7 +1,7 @@
 class TableOperations():
     def __init__(self) -> None:
         pass
-    
+
     @property
     def table(self):
         return self._table
@@ -42,11 +42,7 @@ class TableOperations():
             probability.append(p)
         return probability
 
-    def __str__(self) -> str:
-        return f'''
-        Table of decisions: {self.table_to_decisions()}\n
-        Table of atributes: {self.table_to_atributes()}\n
-        Number of variables for atributes: {self.num_of_atributes()}\n
-        Occurrences: {self.occurrences()}\n
-        Propability: {self.probability()}
-        '''
+
+
+
+

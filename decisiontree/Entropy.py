@@ -1,5 +1,5 @@
 import math
-from decisiontree.TableOperations import TableOperations
+from decisiontree.Occurrences_Probability import TableOperations
 
 
 class Entropy(TableOperations):

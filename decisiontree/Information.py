@@ -1,5 +1,5 @@
 import math
-from decisiontree.TableOperations import TableOperations
+from decisiontree.Occurrences_Probability import TableOperations
 
 class Information(TableOperations):
     def __init__(self):
@@ -59,8 +59,4 @@ class Information(TableOperations):
         informations=informations[:-1]
 
         return informations  
-         
-    def __str__(self) -> str:
-        return  f'''Information for an: {self.info()}
-                    
-                     '''   
+
