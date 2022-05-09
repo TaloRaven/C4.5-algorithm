@@ -51,6 +51,7 @@ def make_decision_for_nodes(node: Node, atribut_index):
             new_nodes.append(new_node)
         else:
             new_node.attribute= atribut_index
+            new_node.value = children_rows[0][atribut_index]
             # print(new_node.attribute)
             new_nodes.append(new_node)
             #TODO set atribut to n number for this node
@@ -76,10 +77,14 @@ def get_node(node):
 def showtree(node: Node,przesuniecie):
     if node.attribute!=None:
         print(" "*przesuniecie,end="")
-        if node.decision: print(node.decision,end=" -> ")
-        print("Atrybut",node.attribute)
+        if node.decision:
+            print(node.decision,end=" -> ")
+        if node.value:
+            print(node.value,"->","Atrybut",node.attribute)
+        if node.value==None:
+            print("Atrybut", node.attribute)
         for p in node.childrens:
-            showtree(p,przesuniecie+7)
+            showtree(p,przesuniecie+10)
     else:
         print(" "*przesuniecie,end="")
         print(node.value, "->" ,node.decision)
