@@ -1,9 +1,8 @@
 from decisiontree.GainRatio import Gain_Ratio
-
 class Node(Gain_Ratio):
     def __init__(self):
         super().__init__()
-        self.childrens=None
+        self.childrens=[]
         self.decision=None
         self.attribute=None
         self.value=None

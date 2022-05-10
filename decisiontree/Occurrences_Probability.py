@@ -10,8 +10,16 @@ class TableOperations():
         self._table=table
     
     def table_to_atributes(self):
-        atributes=[[]for _ in range(len(self._table[0]))]
-        [[atributes[x].append(j[x]) for x in range(len(self._table[0]))]for i,j in enumerate(self._table)]
+        # atributes=[[]for _ in range(len(self._table[0]))]
+        atributes=[]
+        for _ in range(len(self._table[0])):
+            atributes.append([])
+
+        for i, j in enumerate(self._table):
+            for x in range(len(self._table[0])):
+                atributes[x].append(j[x])
+
+        # [[atributes[x].append(j[x]) for x in range(len(self._table[0]))]for i,j in enumerate(self._table)]
         return atributes
 
     def num_of_atributes(self)-> list:
